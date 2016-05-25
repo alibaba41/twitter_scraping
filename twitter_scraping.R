@@ -19,7 +19,7 @@ my_oauth <- OAuthFactory$new(consumerKey=consumerKey,
                              consumerSecret=consumerSecret, requestURL=requestURL,
                              accessURL=accessURL, authURL=authURL)
 my_oauth$handshake(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl"))
-8708138
+
 
 getwd()
 save(my_oauth, file="oauth_token.Rdata")
